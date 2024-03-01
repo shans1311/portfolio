@@ -33,4 +33,6 @@
   .work-items-container {
     max-height: 49.95vh;
     overflow-y: auto; /* Scroll only the work items */
+    border-bottom: 2px solid #4B4737; 
+
   }

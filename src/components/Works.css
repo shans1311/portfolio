@@ -28,4 +28,9 @@
   .works-section {
     height: auto;
   }
-}
+
+  .work-image {
+    width: 100%;
+    height: 100%; 
+  }
+} 

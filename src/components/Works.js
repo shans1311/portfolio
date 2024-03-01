@@ -53,7 +53,7 @@ function Works({ work }) {
       case 6:
         setContentComponent(<Work6 />);
         setImageSrc(portfolioBANNER);
-        setExternalLink("https://example.com/link-for-work-6");
+        setExternalLink("https://github.com/shans1311/portfolio");
         break;
       default:
         setContentComponent(<p>No work found.</p>);
