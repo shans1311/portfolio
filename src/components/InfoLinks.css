@@ -1,0 +1,25 @@
+/* Existing styles for .info-links */
+.info-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Adjust the gap between links as needed */
+}
+
+.info-links a {
+    color: #AAB6A1;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+/* Responsive adjustments using a media query */
+@media (max-width: 768px) {
+    .info-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 0.25rem; /* Adjust gap for smaller screens, if necessary */
+    }
+
+    .info-links a {
+        font-size: 18px; /* Optionally adjust font size for smaller screens */
+        padding: 0.75rem;
+    }
+}

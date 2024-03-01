@@ -1,0 +1,95 @@
+
+
+.About-container {
+    display: flex;
+    padding: 1rem;
+}
+
+.About-sidebar {
+    flex: 0 0 40%; /* Takes up 40% of the space */
+    margin: 2rem;
+    width: 60%;
+
+
+}
+#About-image {
+    width: 90%; 
+    height: 90%;
+    background-color: #8FBC8F; /* Placeholder for the image */
+    margin-bottom: 1rem;
+}
+
+.About-text {
+    margin-top: 0.25rem;
+    text-align: left;
+}
+
+.About-text h1, p{
+color: #4B4737;
+}
+
+.About-text p {
+    font-size: 20px;
+}
+
+
+.About-text ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+}
+
+.About-text ul li {
+    margin-bottom: 0.5rem; /* Adds space between list items */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
+    #About-image {
+        width: auto;
+        height: auto; 
+        max-height: 500px; 
+    }
+    .About-sidebar {
+        width: 100%; /* Adjust if necessary to ensure layout consistency */
+    }
+
+    body {
+        overflow: visible;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .About-container {
+        flex-direction: column; /* Stack the sidebar and content vertically */
+    }
+    /* Adjusts for tablets and smaller desktops */
+    .About-sidebar {
+        flex: 1 0 50%; /* Adjust width to 50% for more space */
+    }
+    .About-text {
+        flex: 1 0 50%; /* Adjust width to 50% to match sidebar */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjusts for landscape phones and small tablets */
+    
+    .About-sidebar, .About-text {
+        flex: 1 0 100%; /* Allow each to take full width */
+        margin: 1rem 0; /* Adjust margins for a tighter layout */
+    }
+    .About-sidebar {
+        margin: 2rem;
+        width: 75%;
+    }
+    #About-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjusts for portrait phones */
+    .About-text p {
+        font-size: 18px; /* Slightly reduce the font size for better readability */
+    }
+}

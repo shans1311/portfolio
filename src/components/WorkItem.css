@@ -1,0 +1,28 @@
+.work-item {
+    cursor: pointer;
+    text-align: left; /* Align text to the left */
+
+    padding: 1rem 1rem 1rem 0 ;
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  .work-item:last-child {
+    border-bottom: none; 
+  }
+  
+  .work-item h3 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    color: #4B4737;
+  }
+  
+  .work-item h4 {
+    margin: 0;
+    color: #625E4E; 
+    padding-bottom: 0.5rem;
+  }
+  
+  .work-item p {
+    margin: 0;
+  }
+  

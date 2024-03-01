@@ -1,0 +1,31 @@
+.works-section {
+    padding: 1rem;
+    text-align: left;
+    overflow-y: scroll;
+    height: 88.25vh;
+
+
+  }
+  
+#workName {
+  padding-left: 0.5rem;
+}
+.work-image {
+  width: 100%; /* Full width */
+  height: 450px; /* Adjust the height as needed */
+  background-color: #8FBC8F; /* Placeholder background color */
+  margin-bottom: 1rem; /* Spacing between the image and the text */
+}
+
+.works-section h2 {
+  margin-top: 0;
+  color: #4B4737;
+  font-size: 48px
+}
+ 
+  
+@media screen and (max-width: 768px) {
+  .works-section {
+    height: auto;
+  }
+}

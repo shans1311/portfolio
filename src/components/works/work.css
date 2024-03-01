@@ -1,0 +1,21 @@
+#subHeader {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.bodyText p {
+    font-size: 18px;
+    padding-bottom: 3rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #subHeader {
+        font-size: 22px;
+        margin-right: 0rem;
+    }
+  }
+  

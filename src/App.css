@@ -1,0 +1,94 @@
+body {
+  background-color: #F3EFE3;
+  height: 100%; 
+  overflow: hidden
+
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 2rem; 
+
+
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  border-bottom: 2px solid #4B4737; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+
+
+.App-header a {
+  color: #585C46;
+  margin-left: 1rem;
+  margin-right: 0;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+
+
+.Content {
+  display: flex;
+  height: 88.25vh; 
+  width: 100%; 
+}
+
+.LeftColumn {
+  flex: 0 0 45%; 
+
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+  border-right: 2px solid #4B4737;
+}
+
+.InfoSection {
+  flex: 0 0 30%;
+}
+
+.WorksSection {
+  flex-grow: 1;
+}
+
+.underline {
+  display: block;
+  height: 2px;
+  background-color: #4B4737; 
+  width: 0;
+  transition: width 0.25s linear;
+
+
+}
+
+*:hover > .underline, .active > .underline {
+  width: 100%;
+
+}
+
+@media (max-width: 768px) {
+  .Content {
+    flex-direction: column;
+  }
+
+  .LeftColumn,
+  .WorksSection {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    margin: 0; 
+  }
+
+  body {
+    overflow:auto;
+  }
+}

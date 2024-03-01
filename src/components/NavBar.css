@@ -1,0 +1,44 @@
+/* NavBar.css */
+.nav-link {
+    position: relative;
+    margin-right: 4rem;
+    display: inline-block;
+    color: #585C46;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav-link .underline {
+    display: block;
+    height: 2px;
+    background-color: #4B4737; /* Color of the underline */
+    width: 0;
+    transition: width 0.25s linear;
+    position: absolute;
+    bottom: -3px; /* Adjust based on exact positioning desired */
+    left: 0;
+    right: 0;
+  }
+  
+  .nav-link:hover .underline, .nav-link.active .underline {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+      .NavBar {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+      }
+  
+      .NavBar .nav-link {
+          font-size: smaller;
+          margin-top: 0.5rem;
+          margin-right: 0;
+          margin-bottom: 0.5rem;
+          text-align: center; /* Adjusted to center for consistency in appearance */
+      }
+  }
+  
