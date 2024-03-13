@@ -1,7 +1,6 @@
 import React from 'react';
 import './work.css';
 import image1 from '../../media/wattcast9.png';
-import image2 from '../../media/wattcast10.png';
 import image3 from '../../media/wattcast11.png';
 
 
