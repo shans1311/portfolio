@@ -1,5 +1,12 @@
 import React from 'react';
 import './work.css';
+import image1 from '../../media/sats_sc1.png';
+import image2 from '../../media/sats_sc2.png';
+import image3 from '../../media/sats_sc3.png';
+
+
+
+
 
 
 const sats = () => (
@@ -17,6 +24,7 @@ const sats = () => (
 
     <div className='bodyText'>
       <p>
+      <img src={image1} alt="Sats image 1" className="work-desc-image-right" />
       <b>Before the internship: </b>During my summer internship at SATS, I embarked on my first real programming job, 
       filled with anticipation and a degree of apprehension. The prospect of working in a professional setting was 
       daunting, given my lack of experience. However, the welcoming and supportive environment at SATS quickly 
@@ -32,10 +40,15 @@ const sats = () => (
       developers and mentors at SATS. This phase was crucial in familiarizing myself with the app's architecture 
       and coding standards, setting the stage for the development work that lay ahead.
       </p>
-
       <p>
+    
+
+
+
         <b>The result: </b> The culmination of our efforts was the creation of the "Schedule your own workout" feature. This tool was designed to empower users to take charge of their fitness routines by scheduling workouts according to their preferences. It included several components: a home screen button leading to the scheduling page, a confirmation page, and a section for viewing scheduled workouts. This feature aimed to provide users with a personalized and flexible workout planning tool, encouraging them to maintain a consistent workout schedule.
       </p>
+      <img src={image2} alt="Sats image 2" className="work-desc-image-left" />
+      <img src={image3} alt="Sats image 3" className="work-desc-image-left" />
       <p>
         <b>Reflection: </b> Reflecting on the internship, the steep learning curve was both a challenge and an opportunity for growth. I gained invaluable insights into iOS development, teamwork, and the practical application of programming skills in a professional environment. The project taught me the importance of coding standards, effective team collaboration, and the use of tools like GitHub for code management. Working at SATS was not only a significant learning experience but also an enjoyable one. The team dynamics were fantastic, fostering a supportive and collaborative atmosphere that made the internship a memorable journey. Despite the sadness of parting ways at the end of the internship, the experience has left me with lasting connections and a keen anticipation for future opportunities in the tech industry.
       </p>

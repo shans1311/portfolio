@@ -8,12 +8,12 @@ const namesforspotify = () => (
     <p id='subHeader'>
      Website integrated with Spotify, utilizing both OpenAI's ChatGPT API and the Spotify API
      to generate unique playlist names. Functions by analyzing a user's existing Spotify musical preferences. 
-     Through this analysis, the website can suggest tailored playlist names 
+     The website can then suggest tailored playlist names 
      that closely align with the user’s listening habits and preferences.
      < br/>
      < br/>
      The integration with OpenAI’s ChatGPT allows for the generation of creative and contextually relevant names, while the Spotify API access 
-     ensures that these suggestions are deeply personalized, reflecting the user's actual music 
+     ensures that these suggestions are personalized, reflecting the user's actual music 
      library and taste. 
     </p>
 
@@ -34,8 +34,7 @@ const namesforspotify = () => (
       a choice inspired by my previous work on the SpellBound project and practical experience gained 
       during coding interviews that emphasized backend development. This framework proved to be 
       both enjoyable and effective for such applications. The frontend, which handles interactions 
-      with the Spotify API, is developed in JavaScript, where my proficiency in functional programming 
-      was used.
+      with the Spotify API, is developed in JavaScript.
       </p>
 
       <p>

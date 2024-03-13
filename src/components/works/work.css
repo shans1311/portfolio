@@ -12,10 +12,60 @@
     margin: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+.work-desc-image-right {
+    float: right; 
+    margin: 0rem 2rem 2rem 2rem;
+    max-width: 550px;
+    max-height: 20rem;
+    height: auto; 
+    border-radius: 8px; 
+  }
+
+  .work-desc-image-left {
+    float: left; 
+    margin: 0rem 2rem 2rem 2rem;
+    max-width: 550px;
+    max-height: 20rem;
+    height: auto; 
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: 1280px){
     #subHeader {
-        font-size: 22px;
+      font-size: smaller;
+    }  
+    .bodyText p{ 
+    font-size: smaller;
+    }  
+    
+    
+  }
+
+  @media screen and (max-width: 720px){
+    .work-desc-image-left {
+      max-height: 15rem;
+      margin: 0rem 0.5rem 0.5rem 0.5rem;
+
+  
+    }
+    .work-desc-image-right {
+      max-height: 15rem;
+      margin: 0rem 0.5rem 0.5rem 0.5rem;
+
+    }
+  }
+
+
+  
+@media screen and (max-width: 1024px) {
+    #subHeader {
         margin-right: 0rem;
     }
+
+    .work-desc-image {
+        max-width: 300px; /* Maximum width of the image */
+        margin-left: 1rem; /* Adjust spacing for smaller screens */
+      }
+    
   }
   

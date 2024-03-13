@@ -11,15 +11,22 @@
     font-size: 20px;
 }
 
-/* Responsive adjustments using a media query */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .info-links {
-        flex-direction: column; /* Stack links vertically on smaller screens */
-        gap: 0.25rem; /* Adjust gap for smaller screens, if necessary */
+        flex-direction: column;
+        gap: 0.01rem;
     }
 
     .info-links a {
-        font-size: 18px; /* Optionally adjust font size for smaller screens */
-        padding: 0.75rem;
+        padding: 0.5rem;
     }
 }
+
+
+@media screen and (max-width: 1280px){
+    .info-links a {
+      font-size: smaller
+    }  
+    
+  }
+    

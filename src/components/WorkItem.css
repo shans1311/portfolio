@@ -25,4 +25,10 @@
   .work-item p {
     margin: 0;
   }
-  
+
+  @media screen and (max-width: 1280px){
+    .work-item p, .work-item h3, .work-item, h4 {
+      font-size: smaller;
+    }  
+    
+  }

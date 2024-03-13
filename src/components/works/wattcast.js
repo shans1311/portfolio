@@ -1,5 +1,10 @@
 import React from 'react';
 import './work.css';
+import image1 from '../../media/wattcast9.png';
+import image2 from '../../media/wattcast10.png';
+import image3 from '../../media/wattcast11.png';
+
+
 
 
 const wattcast = () => (
@@ -12,10 +17,13 @@ const wattcast = () => (
     </p>
     <div className='bodyText'>
     <p>
+    <img src={image1} alt="Wattcast main menu" className="work-desc-image-right" />
+
         <b>Background: </b> Our team's choice to develop an electricity bill calculator app was driven by the 
         goals of economizing energy consumption and minimizing environmental degradation. 
         This initiative held special significance for me, aligning well with my passion for 
         environmental consciousness and my passion for software engineering.
+
     </p>
     <p>
       <b>My role: </b> In this project, my responsibilities were varied. 
@@ -35,6 +43,8 @@ const wattcast = () => (
     </p>
 
     <p>
+    <img src={image3} alt="Wattcast appliances menu" className="work-desc-image-left" />
+
       <b>Front-end development</b> When developing the front end with team members, we experienced that jetpack 
       compose was a really nice programming language to use. Its high grade of reusability and its integration 
       to kotlin and the android studio IDE made combining functional programming and visual components astoundingly 

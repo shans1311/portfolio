@@ -1,38 +1,70 @@
 .work-selection {
-    padding: 1rem;
-    overflow-y: auto; /* Enables vertical scroll */
-    max-height: 70.95vh;
+  padding: 1rem;
+  overflow-y: auto; /* Enables vertical scroll */
+  max-height: 66.95vh;
 
-  }
+}
 
-  .work-selection-header {
-    position: sticky;
-    top: 0;
-    background-color: #F3EFE3;
-    color: #4B4737;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligns the header title to the left */
-  }
+.work-selection-header {
+  position: sticky;
+  top: 0;
+  background-color: #F3EFE3;
+  color: #4B4737;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns the header title to the left */
+}
+
+.work-selection-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.work-selection-header hr {
+  border: none;
+  height: 1px;
+  background-color: #4B4737; /* Line color */
+  margin-bottom: 1rem;
+  width: 100%; /* Line takes full width */
+  align-self: flex-end; /* Aligns the line to the right */
+  margin-left: auto; /* Pushes the line to the right */
+
+}
+.work-items-container {
+  max-height: 45.95vh;
+  overflow-y: auto; /* Scroll only the work items */
+  border-bottom: 2px solid #4B4737; 
+}
+
+  @media screen and (min-width: 1920px) {
+    .work-items-container {
+      max-height: 55.95vh;
+    }
   
-  .work-selection-header h2 {
-    margin-bottom: 0.5rem;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .work-items-container {
+      max-height: 50.95vh;
+    }
   
-  .work-selection-header hr {
-    border: none;
-    height: 1px;
-    background-color: #4B4737; /* Line color */
-    margin-bottom: 1rem;
-    width: 120%; /* Line takes full width */
-    align-self: flex-end; /* Aligns the line to the right */
-    margin-left: auto; /* Pushes the line to the right */
-
   }
-  .work-items-container {
-    max-height: 49.95vh;
-    overflow-y: auto; /* Scroll only the work items */
-    border-bottom: 2px solid #4B4737; 
 
+  @media (max-width: 768px) {
+    .work-items-container {
+      border-bottom: hidden;
+    }
+    .work-selection {
+      padding: 0rem;
+    
+    }
   }
+
+  @media screen and (max-width: 1280px){
+    .work-selection-header h2 {
+      font-size: smaller;
+    }  
+    
+  }
+
+ 

@@ -24,11 +24,12 @@
   .nav-link:hover .underline, .nav-link.active .underline {
     width: 100%;
   }
+
   
   @media screen and (max-width: 768px) {
       .NavBar {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
           padding: 0;
       }
@@ -41,4 +42,7 @@
           text-align: center; /* Adjusted to center for consistency in appearance */
       }
   }
+
+  
+  
   

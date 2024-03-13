@@ -16,17 +16,32 @@
   background-color: #8FBC8F; /* Placeholder background color */
   margin-bottom: 1rem; /* Spacing between the image and the text */
 }
-
+ 
 .works-section h2 {
   margin-top: 0;
   color: #4B4737;
   font-size: 48px
 }
- 
+
+
+@media screen and (max-width: 1280px){
+  #workName {
+    font-size:xx-large
+  }  
   
+}
+  
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
+  .work-image {
+    width: 100%;
+    height:auto;
+  }
+
+}
 @media screen and (max-width: 768px) {
   .works-section {
     height: auto;
+    width: 90%;
   }
 
   .work-image {
@@ -34,3 +49,4 @@
     height: 100%; 
   }
 } 
+

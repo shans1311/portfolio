@@ -19,7 +19,7 @@ function App() {
     },
     {
       id: 2,
-      name: 'namesforspotify',
+      name: 'names for spotify',
       subtext: 'Spotify playlist name generator / 2024',
       description: 'Website utilizing Node.js/Express + Spotify/OpenAi API',
     },
@@ -71,10 +71,10 @@ const handleWorkSelect = (work) => {
         </header>
           <div className="Content">
             <div className="LeftColumn">
-              <div className="InfoSection">
+              <div>
                 <InfoSection/>
               </div>
-              <div className="WorkSelector">
+              <div>
               <WorkSelection onWorkSelect={handleWorkSelect} works={works} selectedWorkId={selectedWorkId} />
               </div>
             </div>
