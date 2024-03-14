@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState, useEffect }from 'react';
 import Navbar from './components/NavBar.js';
 import './App.css';
 import './About.css';
@@ -8,9 +8,18 @@ import { Link } from 'react-router-dom';
 
 
 
-
-
 function About() {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+}, []);
   return (
     <div>
         <div className="App">
@@ -21,10 +30,14 @@ function About() {
             <Navbar/>
           </header>
           <div className="About-container">
-            <div className="About-sidebar">
-              <img src={profileImage} alt="guy" height={"600px"} id="About-image"/>
-              <InfoLinks />
-            </div>
+          
+
+            {!isMobile && (
+          <div className="About-sidebar">
+            <img src={profileImage} alt="guy" height={"600px"} id="About-image"/>
+            <InfoLinks />
+          </div>
+        )}
             <div className="About-text">
               <h1>Hey! I'm Shan.</h1>
               <p>
@@ -34,6 +47,7 @@ function About() {
               </p>
 
               <p>
+              {isMobile && <br />}
               Combining my largely self-taught programming skills in front-end development<br />
                with JS and React, and my course-taught knowledge in user-oriented design, i <br />
                want to facilitate creation of user-friendly applications and experiences with a <br />
@@ -41,12 +55,16 @@ function About() {
               </p>
 
               <p>
+              {isMobile && <br />}
+              {isMobile && <br />}
               <b>Things i want to learn: </b> back-end coding, snowboarding, cross-fit,<br />
                driving (lol), photoshop, drawing, creative coding, JS frameworks, <br />
                typescript
               </p>
               
               <p>
+              {isMobile && <br />}
+              {isMobile && <br />}
               <b>Things i like: </b>sample diving hop hop music, cuddling my cat (that im allergic <br />
               to), trippy sci-fi movies, working out, baking (i make a mean loaf), trying and <br />
               failing at stuff, front-end and functional programming, shooting 3-pointers, <br />
@@ -54,6 +72,8 @@ function About() {
               </p>
 
               <p>
+              {isMobile && <br />}
+              {isMobile && <br />}
               Current favourites:
               </p>
               <ul>
@@ -64,6 +84,11 @@ function About() {
                 <li><b>Places:</b> My bed, the view from outside my dorm in Brisbane, Grasse in France, Ubud in Bali, Jeløy</li>
               </ul>
             </div>
+            {isMobile && (
+              <div className="About-mobile-infolinks">
+                  <InfoLinks />
+              </div>
+          )}
           </div>
         </div>
     </div>

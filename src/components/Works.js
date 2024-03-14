@@ -28,7 +28,7 @@ function Works({ work }) {
       case 1:
         setContentComponent(<Work1 />);
         setImageSrc(satsBANNER);
-        setExternalLink("https://example.com/link-for-work-1");
+        setExternalLink("https://github.com/shans1311/SATS");
         break;
       case 2:
         setContentComponent(<Work2 />);

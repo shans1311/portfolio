@@ -80,15 +80,15 @@ color: #4B4737;
 }
 
 @media screen and (max-width: 768px) {
-    /* Adjusts for landscape phones and small tablets */
     
     .About-sidebar, .About-text {
-        flex: 1 0 100%; /* Allow each to take full width */
         margin: 1rem 0; /* Adjust margins for a tighter layout */
     }
     .About-sidebar {
-        margin: 2rem;
-        width: 90%;
+        display: none; /* Hide sidebar on mobile */
+    }
+    .mobile-info-links {
+        display: block; 
     }
     #About-image {
         display: none;
@@ -96,7 +96,6 @@ color: #4B4737;
 }
 
 @media screen and (max-width: 480px) {
-    /* Adjusts for portrait phones */
     .About-text p {
         font-size: 18px; /* Slightly reduce the font size for better readability */
     }
